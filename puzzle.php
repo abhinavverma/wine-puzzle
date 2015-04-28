@@ -14,7 +14,7 @@
  * @package    Wine Yard Puzzle
  * @author     Abhinav Verma <abhinav.verma20@gmail.com>
  * @version    0.1
- * @link       
+ * @link       https://github.com/abhinavverma/wine-puzzle
  * @since      File available since Release 0.1
  */
 class Puzzle{
