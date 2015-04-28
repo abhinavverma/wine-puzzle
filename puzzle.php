@@ -1,6 +1,30 @@
 <?php
+/**
+ * puzzle.php is a PHP script which is coded in patern of PHP5 and runs on PHP CLI to give a project of wine sold by vineyards of Apan.
+ *
+ * This script is coded in PHP 5.5.X+, this script is executed and tested on 2 Core Xeon Processor, 2GB RAM, Ubuntu 14.04x64, with LEMP environment
+ * with PHP version PHP 5.5.9-1ubuntu4.9 (cli) (built: Apr 17 2015 11:44:57), this script on an average took 14-16 seconds to execute and provide
+ * result with the solution below we receive maximum sale by Apan Vineyard are : 297448. it runs on PHP CLI.
+ * 
+ * Class Puzzle contain a function which iterate between file "person_wine_3.txt" and retun another set of file which contain desired result.
+ *
+ * PHP version 5.5.X
+ *
+ *
+ * @package    Wine Yard Puzzle
+ * @author     Abhinav Verma <abhinav.verma20@gmail.com>
+ * @version    0.1
+ * @link       
+ * @since      File available since Release 0.1
+ */
 class Puzzle{
-
+	/**
+     * Class Puzzle
+     *
+     * input the file name in class to process
+     *
+     * @var $fileName
+     */
 	public $fileName;
 
 	function __construct($text){
@@ -54,8 +78,8 @@ class Puzzle{
 		fclose($fh);
 	}
 }
-
+echo "Script Execution started at : ".date('Y-m-d H:i:s')."\n";
 $puzzle = new Puzzle("person_wine_3.txt");
 $puzzle->assignWines();
-
+echo "Script Execution stoped at : ".date('Y-m-d H:i:s')."\n";
 ?>
