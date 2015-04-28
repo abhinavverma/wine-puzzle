@@ -31,6 +31,12 @@ class Puzzle{
 		$this->fileName = $text;
 	}
 
+	/**
+     * function assignWines
+     *
+     * input the file which contain the person and wine data, output a TSV file which contain the desired result based on puzzle.
+     *
+     */
 	public function assignWines(){
 		$wineWishlist	= [];
 		$wineList 		= [];
